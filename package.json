@@ -1,18 +1,23 @@
 {
     "name": "jack-hermanson-component-lib",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "private": false,
     "main": "lib/src/index.js",
     "license": "MIT",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.35",
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@fortawesome/react-fontawesome": "^0.1.14",
         "@popperjs/core": "^2.9.2",
         "@types/react": "^17.0.11",
         "@types/react-dom": "^17.0.0",
         "bootstrap": "^5.0.1",
-        "reactstrap": "^9.0.0-0",
+        "jack-hermanson-css-lib": "^0.2.0",
+        "jack-hermanson-ts-utils": "^1.2.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3",
+        "reactstrap": "^9.0.0-0",
         "typescript": "^4.3.4"
     },
     "files": [
