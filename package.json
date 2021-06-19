@@ -1,6 +1,6 @@
 {
     "name": "jack-hermanson-component-lib",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "private": false,
     "main": "lib/src/index.js",
     "license": "MIT",
