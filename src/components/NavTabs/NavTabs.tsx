@@ -6,6 +6,7 @@ interface Props {
     links: {
         path: string;
         text: string;
+        exact?: boolean;
     }[];
 }
 
@@ -16,7 +17,11 @@ export const NavTabs: React.FC<Props> = ({ links }: Props) => {
                 <Nav className="mb-2" tabs>
                     {links.map(link => (
                         <NavItem key={link.path}>
-                            <NavLink className="nav-link" to={link.path}>
+                            <NavLink
+                                exact={link.exact}
+                                className="nav-link"
+                                to={link.path}
+                            >
                                 {link.text}
                             </NavLink>
                         </NavItem>
