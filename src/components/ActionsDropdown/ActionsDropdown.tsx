@@ -40,7 +40,7 @@ export const ActionsDropdown: React.FC<Props> = ({
             <DropdownMenu right={right}>
                 {options.map((option, index) =>
                     option ? (
-                        <React.Fragment>
+                        <React.Fragment key={`${option.label}-${index}`}>
                             {option.type === "OnClickItem" ? (
                                 renderOnClick(option)
                             ) : option.type === "LinkItem" ? (
