@@ -5,3 +5,4 @@ export { PageHeader } from "./PageHeader/PageHeader";
 export { NavTabs } from "./NavTabs/NavTabs";
 export { ActionCardHeader } from "./ActionCardHeader/ActionCardHeader";
 export { KeyValCardBody } from "./KeyValCardBody/KeyValCardBody";
+export { ActionsDropdown } from "./ActionsDropdown/ActionsDropdown";
