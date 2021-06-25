@@ -24,20 +24,20 @@ interface LinkItem extends BaseItemType {
 interface Props {
     options: Array<OnClickItem | LinkItem | undefined>;
     menuName?: string;
-    right?: boolean;
+    end?: boolean;
 }
 
 export const ActionsDropdown: React.FC<Props> = ({
     options,
     menuName = "Actions",
-    right = true,
+    end = true,
 }: Props) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <ButtonDropdown isOpen={isOpen} toggle={() => setIsOpen(o => !o)}>
             <DropdownToggle caret>{menuName}</DropdownToggle>
-            <DropdownMenu right={right}>
+            <DropdownMenu end={end}>
                 {options.map((option, index) =>
                     option ? (
                         <React.Fragment key={`${option.label}-${index}`}>
