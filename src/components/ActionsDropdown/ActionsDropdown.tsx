@@ -6,44 +6,41 @@ import {
     DropdownToggle,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-
-interface BaseItemType {
-    label: string;
-}
-
-interface OnClickItem extends BaseItemType {
-    type: "OnClickItem";
-    onClick: () => any;
-}
-
-interface LinkItem extends BaseItemType {
-    type: "LinkItem";
-    linkPath: string;
-}
+import {
+    ClickDropdownAction,
+    DropdownAction,
+    LinkDropdownAction,
+} from "jack-hermanson-ts-utils";
 
 interface Props {
-    options: Array<OnClickItem | LinkItem | undefined>;
+    options: Array<DropdownAction | undefined>;
     menuName?: string;
     end?: boolean;
+    size?: "sm" | "md" | "lg";
+    color?: string;
 }
 
 export const ActionsDropdown: React.FC<Props> = ({
     options,
     menuName = "Actions",
     end = true,
+    size = "md",
+    color = "secondary",
 }: Props) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <ButtonDropdown isOpen={isOpen} toggle={() => setIsOpen(o => !o)}>
-            <DropdownToggle caret>{menuName}</DropdownToggle>
+            <DropdownToggle color={color} size={size} caret>
+                {menuName}
+            </DropdownToggle>
             <DropdownMenu end={end}>
                 {options.map((option, index) =>
                     option ? (
                         <React.Fragment key={`${option.label}-${index}`}>
-                            {option.type === "OnClickItem" ? (
+                            {option instanceof ClickDropdownAction ? (
                                 renderOnClick(option)
-                            ) : option.type === "LinkItem" ? (
+                            ) : option instanceof LinkDropdownAction ? (
                                 renderLink(option)
                             ) : (
                                 <React.Fragment />
@@ -57,7 +54,7 @@ export const ActionsDropdown: React.FC<Props> = ({
         </ButtonDropdown>
     );
 
-    function renderLink(option: LinkItem) {
+    function renderLink(option: LinkDropdownAction) {
         return (
             <DropdownItem>
                 <Link style={{ textDecoration: "none" }} to={option.linkPath}>
@@ -67,7 +64,7 @@ export const ActionsDropdown: React.FC<Props> = ({
         );
     }
 
-    function renderOnClick(option: OnClickItem) {
+    function renderOnClick(option: ClickDropdownAction) {
         return (
             <DropdownItem onClick={option.onClick}>{option.label}</DropdownItem>
         );

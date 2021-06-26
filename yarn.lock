@@ -3704,6 +3704,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/history@*":
+  version "4.7.8"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.8.tgz#49348387983075705fe8f4e02fb67f7daaec4934"
+  integrity sha512-S78QIYirQcUoo6UJZx9CSP0O2ix9IaeAXwQi26Rhr/+mg7qqPy8TzaxHSUut7eGjL8WmLccT7/MXf304WjqHcA==
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz#3c9ee980f1a10d6021ae6632ca3e79ca2ec4fb50"
@@ -3859,6 +3864,23 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
   integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.7.tgz#a126d9ea76079ffbbdb0d9225073eb5797ab7271"
+  integrity sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  version "5.1.15"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-5.1.15.tgz#c1069e0da4617fd315e381b56b18b89490e14e2a"
+  integrity sha512-z3UlMG/x91SFEVmmvykk9FLTliDvfdIUky4k2rCfXWQ0NKbrP8o9BTCaCTPuYsB8gDkUnUmkcA2vYlm2DR+HAA==
+  dependencies:
+    "@types/history" "*"
     "@types/react" "*"
 
 "@types/react-syntax-highlighter@11.0.4":
@@ -9657,10 +9679,10 @@ jack-hermanson-css-lib@^1.0.0:
   resolved "https://registry.yarnpkg.com/jack-hermanson-css-lib/-/jack-hermanson-css-lib-1.0.0.tgz#ebedf8ac3ccc555c5bb1fc02676fb25f0941ccd8"
   integrity sha512-c61FcKkY2Q6GDTASrOA9vzqPTm/7F3un+ltR4EmFhBemJSdxy3v62qnwMEiDpP/MLoEGoOAKTdGy+h7KYfiVKQ==
 
-jack-hermanson-ts-utils@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/jack-hermanson-ts-utils/-/jack-hermanson-ts-utils-1.2.1.tgz#acba5dfc85ced15eca9f0a532c4b226c3a1f59e9"
-  integrity sha512-nzY8DNyGQp3a5sOU7FH5L1qg2t4YrkSQD2ywJ6LSJKF4BmFFvdm7a8oSYRm0G2ohoziWK+GplJPfDTkP/q7CgA==
+jack-hermanson-ts-utils@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/jack-hermanson-ts-utils/-/jack-hermanson-ts-utils-1.5.0.tgz#24587567e63983ff36cbad469c83a71c619da66c"
+  integrity sha512-4/OcBzY3ZaNEIK/jlesdvaCftA0xM9FmB/iZnxRPP9z6aiI/H7hlJnb36v0G88AXR31A57iXXSzG/oiMEi6BkA==
   dependencies:
     "@types/express" "^4.17.12"
     express "^4.17.1"
