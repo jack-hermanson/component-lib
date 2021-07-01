@@ -6,3 +6,4 @@ export { ActionCardHeader } from "./ActionCardHeader/ActionCardHeader";
 export { KeyValCardBody } from "./KeyValCardBody/KeyValCardBody";
 export { ActionsDropdown } from "./ActionsDropdown/ActionsDropdown";
 export { ConfirmationModal } from "./ConfirmationModal/ConfirmationModal";
+export { MobileToggleCard } from "./MobileToggleCard/MobileToggleCard";
