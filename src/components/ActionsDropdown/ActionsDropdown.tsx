@@ -56,11 +56,13 @@ export const ActionsDropdown: React.FC<Props> = ({
 
     function renderLink(option: LinkDropdownAction) {
         return (
-            <DropdownItem>
-                <Link style={{ textDecoration: "none" }} to={option.linkPath}>
-                    {option.label}
-                </Link>
-            </DropdownItem>
+            <Link
+                className="dropdown-item"
+                style={{ textDecoration: "none" }}
+                to={option.linkPath}
+            >
+                {option.label}
+            </Link>
         );
     }
 
