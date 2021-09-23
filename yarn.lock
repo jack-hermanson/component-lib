@@ -9679,10 +9679,10 @@ jack-hermanson-css-lib@^1.0.0:
   resolved "https://registry.yarnpkg.com/jack-hermanson-css-lib/-/jack-hermanson-css-lib-1.0.0.tgz#ebedf8ac3ccc555c5bb1fc02676fb25f0941ccd8"
   integrity sha512-c61FcKkY2Q6GDTASrOA9vzqPTm/7F3un+ltR4EmFhBemJSdxy3v62qnwMEiDpP/MLoEGoOAKTdGy+h7KYfiVKQ==
 
-jack-hermanson-ts-utils@^1.14.2:
-  version "1.14.2"
-  resolved "https://registry.yarnpkg.com/jack-hermanson-ts-utils/-/jack-hermanson-ts-utils-1.14.2.tgz#c127fb525ef90f36f88c8556564317b9fbd67612"
-  integrity sha512-oj9FLPZJ3ok8k3KPUk/YPl7xctWO0uARTl52OU4nFhIiN1WnlayWl5bSfoOMg36cBbSP8KODpagrOsVFSqa7Aw==
+jack-hermanson-ts-utils@^1.15.2:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/jack-hermanson-ts-utils/-/jack-hermanson-ts-utils-1.15.2.tgz#bee2a96b55d946de7c210e578a10c9bf204e8aad"
+  integrity sha512-neUCkCZemsUMLkzfY0+k61v13/yQOybPSX8l3V45PdJHyoUGlpSkMc0hGYhzn5l9hfw9GKIfUsbo8syX8dpTwA==
   dependencies:
     "@types/express" "^4.17.12"
     express "^4.17.1"
