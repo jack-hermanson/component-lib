@@ -29,7 +29,7 @@ export const ConfirmationModal: React.FC<Props> = ({
             <ModalHeader toggle={toggle} className="mb-0">
                 {title}
             </ModalHeader>
-            <ModalBody>{children}</ModalBody>
+            <ModalBody>{children || "Are you sure?"}</ModalBody>
             <ModalFooter>
                 <Button size="sm" color="secondary" onClick={toggle}>
                     Cancel

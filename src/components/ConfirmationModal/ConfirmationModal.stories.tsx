@@ -24,3 +24,21 @@ stories.add("default", () => {
         </React.Fragment>
     );
 });
+
+stories.add("without children", () => {
+    const [isOpen, setIsOpen] = React.useState(true);
+
+    return (
+        <React.Fragment>
+            <Button color="primary" onClick={() => setIsOpen(true)}>
+                Toggle
+            </Button>
+            <ConfirmationModal
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                title={"Some Modal"}
+                onConfirm={() => console.log("confirm")}
+            />
+        </React.Fragment>
+    );
+});
