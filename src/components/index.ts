@@ -9,3 +9,4 @@ export { ConfirmationModal } from "./ConfirmationModal/ConfirmationModal";
 export { MobileToggleCard } from "./MobileToggleCard/MobileToggleCard";
 export { KeyValTable } from "./KeyValTable/KeyValTable";
 export { FormError } from "./FormError/FormError";
+export { NavbarLink } from "./NavbarLink/NavbarLink";
