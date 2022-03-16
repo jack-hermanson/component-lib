@@ -35,6 +35,6 @@ export const NavbarLink: FunctionComponent<Props> = ({
 
     function isActive(): boolean {
         const pathsToMatch = activePaths || [to];
-        return pathsToMatch.includes(pathname);
+        return pathsToMatch.some(path => pathname.includes(path));
     }
 };
